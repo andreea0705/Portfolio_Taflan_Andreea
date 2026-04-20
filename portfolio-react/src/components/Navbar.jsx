@@ -39,14 +39,19 @@ export default function Navbar({ currentPage, onNavigate }) {
         ))}
       </ul>
 
-      {/* Bouton hamburger mobile */}
-      <div
-        className={`hamburger ${menuOpen ? 'open' : ''}`}
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        <span />
-        <span />
-        <span />
+      <div className="navbar-right">
+        {/* Bouton retour écran titre */}
+        <button className="btn-back" onClick={() => onNavigate('title')}>
+          ▶ Menu
+        </button>
+
+        {/* Hamburger mobile */}
+        <div
+          className={`hamburger ${menuOpen ? 'open' : ''}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span /><span /><span />
+        </div>
       </div>
     </nav>
   );

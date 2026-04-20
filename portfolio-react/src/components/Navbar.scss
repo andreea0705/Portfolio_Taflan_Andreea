@@ -103,3 +103,31 @@
     &.open { display: flex; }
   }
 }
+
+/* Groupe bouton menu + hamburger */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Bouton retour écran titre */
+.btn-back {
+  font-family: var(--font-title);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.2rem;
+  background: transparent;
+  color: var(--pink);
+  border: 1px solid var(--pink);
+  cursor: none;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+  transition: all 0.2s;
+
+  &:hover {
+    background: var(--pink);
+    color: #fff;
+    box-shadow: var(--glow-sm);
+  }
+}
