@@ -90,11 +90,11 @@ export default function Home({ onNavigate }) {
 
       </div>
 
-      {/* Flèche scroll */}
+      {/* Flèche scroll 
       <div className="scroll-hint">
         <span>Scroll</span>
         <div className="scroll-arrow" />
-      </div>
+      </div>*/}
 
     </section>
   );
