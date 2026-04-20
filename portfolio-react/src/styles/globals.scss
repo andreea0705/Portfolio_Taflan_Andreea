@@ -1,0 +1,186 @@
+/* ---- Variables globales ---- */
+:root {
+  --pink: #ff2d78;
+  --pink-light: #ff6ba8;
+  --pink-dark: #c4005a;
+  --pink-glow: rgba(255, 45, 120, 0.4);
+  --pink-subtle: rgba(255, 45, 120, 0.12);
+  --bg: #0a0008;
+  --bg2: #110010;
+  --bg3: #1a0018;
+  --text: #fff0f8;
+  --text-dim: #c0a0b0;
+  --cyan: #00f5ff;
+  --font-title: 'Orbitron', monospace;
+  --font-body: 'Rajdhani', sans-serif;
+  --font-code: 'Space Mono', monospace;
+  --glow: 0 0 20px rgba(255,45,120,0.4), 0 0 60px rgba(255,45,120,0.4);
+  --glow-sm: 0 0 10px rgba(255,45,120,0.4);
+}
+
+/* ---- Reset ---- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Effet lignes de scan sur tout le site */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.03) 2px,
+    rgba(0,0,0,0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 9997;
+}
+
+a { cursor: none; }
+
+/* ---- Animations ---- */
+
+/* Apparition depuis le bas */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Particules qui montent */
+@keyframes floatUp {
+  from { transform: translateY(0);      opacity: 0.8; }
+  to   { transform: translateY(-100vh); opacity: 0;   }
+}
+
+/* Rebond de la flèche scroll */
+@keyframes bounce {
+  0%, 100% { transform: rotate(45deg) translateY(0); }
+  50%       { transform: rotate(45deg) translateY(6px); }
+}
+
+/* Remplissage des barres de compétences */
+@keyframes barFill {
+  from { width: 0; }
+}
+
+/* Montée du personnage */
+@keyframes charRise {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Classes réutilisables ---- */
+
+/* Bouton rose plein */
+.btn-primary {
+  font-family: var(--font-title);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  background: var(--pink);
+  color: #fff;
+  border: none;
+  cursor: none;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  box-shadow: var(--glow-sm);
+
+  &:hover {
+    background: var(--pink-dark);
+    box-shadow: var(--glow);
+    transform: translateY(-2px);
+  }
+}
+
+/* Bouton contour rose */
+.btn-outline {
+  font-family: var(--font-title);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  background: transparent;
+  color: var(--pink);
+  border: 1px solid var(--pink);
+  cursor: none;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  transition: all 0.2s;
+
+  &:hover {
+    background: var(--pink-subtle);
+    box-shadow: var(--glow-sm);
+    transform: translateY(-2px);
+  }
+}
+
+/* En-tête de section */
+.section-inner {
+  padding: clamp(4rem, 8vw, 7rem) clamp(1.5rem, 8vw, 5rem);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.section-num {
+  font-family: var(--font-title);
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgba(255,45,120,0.08);
+  line-height: 1;
+}
+
+.section-title-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-label {
+  font-family: var(--font-code);
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  color: var(--pink);
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.section-title {
+  font-family: var(--font-title);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+
+  span { color: var(--pink); }
+}
+
+/* Animation d'apparition au scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s, transform 0.7s;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
