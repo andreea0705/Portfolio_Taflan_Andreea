@@ -21,9 +21,9 @@ export default function Contact() {
     e.preventDefault();
     const newErrors = {};
 
-    if (!form.name.trim()) newErrors.name = 'Champ requis';
-    if (!form.email.includes('@')) newErrors.email = 'Email invalide';
-    if (form.message.length < 10) newErrors.message = 'Message trop court';
+    if (!form.name.trim()) newErrors.name = 'Champ requis !';
+    if (!form.email.includes('@')) newErrors.email = 'Email invalide !';
+    if (form.message.length < 10) newErrors.message = 'Message trop court - detaille ta quête !';
 
     setErrors(newErrors);
 

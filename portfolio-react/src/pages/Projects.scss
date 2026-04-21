@@ -1,0 +1,138 @@
+/* ---- Page Projets ---- */
+.projects-section {
+  background: var(--bg2);
+  min-height: 100vh;
+}
+
+/* Boutons de filtre */
+.filters {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  font-family: var(--font-title);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.2rem;
+  background: transparent;
+  color: var(--text-dim);
+  border: 1px solid rgba(255,45,120,0.3);
+  cursor: none;
+  transition: all 0.2s;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+
+  &:hover,
+  &.active {
+    background: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+    box-shadow: var(--glow-sm);
+  }
+}
+
+/* Grille de projets */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Carte projet */
+.project-card {
+  background: var(--bg3);
+  border: 1px solid rgba(255,45,120,0.2);
+  overflow: hidden;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    border-color: var(--pink);
+    transform: translateY(-6px);
+    box-shadow: var(--glow);
+
+    /* Zoom sur l'image au hover */
+    .project-thumb img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* Image du projet */
+.project-thumb {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.4s;
+  }
+}
+
+/* Contenu texte */
+.project-body {
+  padding: 1.5rem;
+}
+
+/* Tags technos */
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+
+.tag {
+  font-family: var(--font-code);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  padding: 0.2rem 0.6rem;
+  background: rgba(255,45,120,0.15);
+  border: 1px solid rgba(255,45,120,0.4);
+  color: var(--pink-light);
+}
+
+/* Titre */
+.project-name {
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.6rem;
+}
+
+/* Description */
+.project-desc {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+/* Lien GitHub */
+.project-link {
+  font-family: var(--font-title);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  color: var(--pink);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.2s;
+
+  &:hover { gap: 0.8rem; }
+}
+
+/* Pas de repo */
+.project-no-repo {
+  font-family: var(--font-code);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}

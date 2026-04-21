@@ -129,3 +129,49 @@
 }
 @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; } }
 
+/* ---- Fiche projet ---- */
+.fiche-header {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.fiche-title {
+  font-family: var(--font-title);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--text);
+
+  span { color: var(--pink); }
+}
+
+.fiche-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.fiche-card {
+  background: var(--bg3);
+  border: 1px solid rgba(255,45,120,0.2);
+  padding: 1.5rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    border-color: var(--pink);
+    box-shadow: var(--glow-sm);
+  }
+}
+
+.fiche-card-title {
+  font-family: var(--font-title);
+  font-size: 0.85rem;
+  color: var(--pink);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.8rem;
+}
+
+.fiche-card-content {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
