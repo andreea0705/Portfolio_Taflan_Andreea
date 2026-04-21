@@ -7,7 +7,7 @@ import About from './pages/About';
 //import Projects from './pages/Projects';
 //import SkillsPage from './pages/SkillsPage';
 //import Testimonials from './pages/Testimonials';
-//import Contact from './pages/Contact';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -37,7 +37,7 @@ export default function App() {
     //projects: <Projects />,
     //skills: <SkillsPage />,
     //testimonials: <Testimonials />,
-    //contact: <Contact onNavigate={goTo} />,
+    contact: <Contact onNavigate={goTo} />,
   };
 
   return (

@@ -1,0 +1,110 @@
+/* ---- Contact ---- */
+.contact-section {
+  background: linear-gradient(180deg, var(--bg2), var(--bg));
+  min-height: 100vh;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Info à gauche */
+.contact-info {
+  h3 {
+    font-family: var(--font-title);
+    font-size: 1.4rem;
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: var(--text-dim);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  a {
+    font-family: var(--font-code);
+    font-size: 0.85rem;
+    color: var(--pink-light);
+    text-decoration: none;
+    padding: 1rem 1.2rem;
+    border: 1px solid rgba(255,45,120,0.2);
+    background: var(--bg3);
+    transition: border-color 0.2s, box-shadow 0.2s;
+
+    &:hover {
+      border-color: var(--pink);
+      box-shadow: var(--glow-sm);
+    }
+  }
+}
+
+/* Formulaire */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  label {
+    font-family: var(--font-title);
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+
+  input, textarea {
+    background: var(--bg3);
+    border: 1px solid rgba(255,45,120,0.3);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    padding: 0.9rem 1rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+
+    &:focus {
+      border-color: var(--pink);
+      box-shadow: var(--glow-sm);
+    }
+
+    &.error { border-color: #ff4444; }
+  }
+
+  textarea { height: 140px; resize: none; }
+}
+
+.error-msg {
+  font-family: var(--font-code);
+  font-size: 0.72rem;
+  color: #ff6666;
+}
+
+.success-msg {
+  font-family: var(--font-code);
+  font-size: 0.85rem;
+  color: var(--cyan);
+  padding: 1rem;
+  border: 1px solid var(--cyan);
+  background: rgba(0,245,255,0.08);
+}
+
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
