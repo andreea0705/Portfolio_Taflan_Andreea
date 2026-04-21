@@ -55,7 +55,7 @@ export default function About() {
           <div className="section-num">01</div>
           <div className="section-title-wrap">
             <div className="section-label">// LEVEL_1</div>
-            <h2 className="section-title">Origine du <span>Personnage</span></h2>
+            <h2 className="section-title">Profil du <span> Joueur </span></h2>
           </div>
         </div>
 
