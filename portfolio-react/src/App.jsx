@@ -3,7 +3,7 @@ import Cursor from './components/Cursor';
 import Navbar from './components/Navbar';
 import TitleScreen from './pages/TitleScreen';
 import Home from './pages/Home';
-//import About from './pages/About';
+import About from './pages/About';
 //import Projects from './pages/Projects';
 //import SkillsPage from './pages/SkillsPage';
 //import Testimonials from './pages/Testimonials';
@@ -33,7 +33,7 @@ export default function App() {
   // Sinon on affiche la page demandée
   const pages = {
     home: <Home onNavigate={goTo} />,
-    //about: <About />,
+    about: <About />,
     //projects: <Projects />,
     //skills: <SkillsPage />,
     //testimonials: <Testimonials />,
