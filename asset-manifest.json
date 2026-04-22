@@ -1,25 +1,34 @@
 {
   "files": {
     "main.css": "/Portfolio_Taflan_Andreea/static/css/main.f0c8efb4.css",
-    "main.js": "/Portfolio_Taflan_Andreea/static/js/main.007b1206.js",
+    "main.js": "/Portfolio_Taflan_Andreea/static/js/main.b9506734.js",
     "static/media/drawing2.png": "/Portfolio_Taflan_Andreea/static/media/drawing2.9b120dd413c9e12ce115.png",
     "static/media/project-menumaker.png": "/Portfolio_Taflan_Andreea/static/media/project-menumaker.82bfeb018d1c64a51931.png",
     "static/media/drawing4.png": "/Portfolio_Taflan_Andreea/static/media/drawing4.ca18a97f5239ea342319.png",
+    "static/media/drawing12.jpg": "/Portfolio_Taflan_Andreea/static/media/drawing12.d45906999b72bf03f369.jpg",
+    "static/media/drawing9.jpg": "/Portfolio_Taflan_Andreea/static/media/drawing9.49f49d238d95258a2105.jpg",
     "static/media/drawing7.png": "/Portfolio_Taflan_Andreea/static/media/drawing7.78b3bd4a6ced322c4612.png",
-    "static/media/drawing5.png": "/Portfolio_Taflan_Andreea/static/media/drawing5.44e4c6a27a934f430394.png",
+    "static/media/drawing1.png": "/Portfolio_Taflan_Andreea/static/media/drawing1.44e4c6a27a934f430394.png",
     "static/media/drawing3.png": "/Portfolio_Taflan_Andreea/static/media/drawing3.0a4e03fabb2de1031e38.png",
     "static/media/character.jpg": "/Portfolio_Taflan_Andreea/static/media/character.289325a8835d6cca1e81.jpg",
-    "static/media/drawing1.png": "/Portfolio_Taflan_Andreea/static/media/drawing1.fb425a2cdae182e42b2c.png",
+    "static/media/drawing5.png": "/Portfolio_Taflan_Andreea/static/media/drawing5.fb425a2cdae182e42b2c.png",
+    "static/media/drawing8.jpg": "/Portfolio_Taflan_Andreea/static/media/drawing8.7a0f21428d823d6a8fde.jpg",
+    "static/media/drawing13.jpg": "/Portfolio_Taflan_Andreea/static/media/drawing13.6d6da2d21d175ca044fe.jpg",
+    "static/media/drawing10.jpg": "/Portfolio_Taflan_Andreea/static/media/drawing10.66517a270d71603d92b0.jpg",
+    "static/media/drawing16.jpg": "/Portfolio_Taflan_Andreea/static/media/drawing16.44a9a4fdcabaff1967be.jpg",
+    "static/media/drawing14.jpg": "/Portfolio_Taflan_Andreea/static/media/drawing14.e4b1617b01fa1408233b.jpg",
     "static/media/drawing6.png": "/Portfolio_Taflan_Andreea/static/media/drawing6.df66518802e842cfb92c.png",
+    "static/media/drawing15.jpg": "/Portfolio_Taflan_Andreea/static/media/drawing15.16deaa4917b2481e0cca.jpg",
+    "static/media/drawing11.jpg": "/Portfolio_Taflan_Andreea/static/media/drawing11.8cb8312984fc24d2710b.jpg",
     "static/media/project-sophie.png": "/Portfolio_Taflan_Andreea/static/media/project-sophie.2035d912c7c76da35cef.png",
     "static/media/project-kasa.png": "/Portfolio_Taflan_Andreea/static/media/project-kasa.bd24892bf41f95e38193.png",
     "static/media/project-ohmyfood1.png": "/Portfolio_Taflan_Andreea/static/media/project-ohmyfood1.5ff47ec6566e394a4adc.png",
     "index.html": "/Portfolio_Taflan_Andreea/index.html",
     "main.f0c8efb4.css.map": "/Portfolio_Taflan_Andreea/static/css/main.f0c8efb4.css.map",
-    "main.007b1206.js.map": "/Portfolio_Taflan_Andreea/static/js/main.007b1206.js.map"
+    "main.b9506734.js.map": "/Portfolio_Taflan_Andreea/static/js/main.b9506734.js.map"
   },
   "entrypoints": [
     "static/css/main.f0c8efb4.css",
-    "static/js/main.007b1206.js"
+    "static/js/main.b9506734.js"
   ]
 }
