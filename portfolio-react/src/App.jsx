@@ -5,8 +5,8 @@ import TitleScreen from './pages/TitleScreen';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
-//import SkillsPage from './pages/SkillsPage';
-//import Testimonials from './pages/Testimonials';
+import SkillsPage from './pages/SkillsPage';
+import Creations from './pages/Creations';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
@@ -35,8 +35,8 @@ export default function App() {
     home: <Home onNavigate={goTo} />,
     about: <About />,
     projects: <Projects />,
-    //skills: <SkillsPage />,
-    //testimonials: <Testimonials />,
+    skills: <SkillsPage />,
+    testimonials: <Creations />,
     contact: <Contact onNavigate={goTo} />,
   };
 

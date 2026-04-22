@@ -1,0 +1,144 @@
+/* ---- Galerie de dessins ---- */
+.gallery-section {
+  background: var(--bg2);
+  min-height: 100vh;
+}
+
+/* Grille responsive */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+/* Carte dessin */
+.gallery-card {
+  position: relative;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  border: 1px solid rgba(255,45,120,0.2);
+  cursor: none;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+  }
+
+  /* Hover : zoom + titre */
+  &:hover {
+    border-color: var(--pink);
+    box-shadow: 0 0 20px var(--pink-glow);
+    transform: translateY(-4px);
+
+    img { transform: scale(1.05); }
+
+    .gallery-overlay { opacity: 1; }
+  }
+}
+
+/* Titre qui apparaît au hover */
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%);
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  span {
+    font-family: var(--font-title);
+    font-size: 0.8rem;
+    color: var(--text);
+    letter-spacing: 0.1em;
+  }
+}
+
+/* ---- Lightbox ---- */
+/* Fond noir quand on clique */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  img {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border: 2px solid var(--pink);
+    box-shadow: 0 0 40px var(--pink-glow);
+  }
+}
+
+.lightbox-title {
+  font-family: var(--font-title);
+  font-size: 1rem;
+  color: var(--pink);
+  letter-spacing: 0.2em;
+}
+
+/* Bouton fermer */
+.lightbox-close {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  background: var(--pink);
+  border: none;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: none;
+  transition: background 0.2s, transform 0.2s;
+
+  &:hover { background: var(--pink-dark); transform: scale(1.1); }
+}
+
+/* Boutons précédent / suivant */
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.7);
+  border: 1px solid var(--pink);
+  color: var(--pink);
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: none;
+  transition: background 0.2s;
+
+  &:hover { background: var(--pink); color: #fff; }
+}
+
+.lightbox-prev { left: -4rem; }
+.lightbox-next { right: -4rem; }
+
+@media (max-width: 768px) {
+  .lightbox-prev { left: 0; }
+  .lightbox-next { right: 0; }
+}
