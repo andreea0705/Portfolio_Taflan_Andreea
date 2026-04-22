@@ -6,17 +6,36 @@ import drawing4 from '../assets/drawing4.png';
 import drawing5 from '../assets/drawing5.png';
 import drawing6 from '../assets/drawing6.png';
 import drawing7 from '../assets/drawing7.png';
+import drawing8 from '../assets/drawing8.jpg';
+import drawing9 from '../assets/drawing9.jpg';
+import drawing10 from '../assets/drawing10.jpg';
+import drawing11 from '../assets/drawing11.jpg';
+import drawing12 from '../assets/drawing12.jpg';
+import drawing13 from '../assets/drawing13.jpg';
+import drawing14 from '../assets/drawing14.jpg';
+import drawing15 from '../assets/drawing15.jpg';
+import drawing16 from '../assets/drawing16.jpg';
+
 import './Creations.scss';
 
 // Tous mes dessins avec un titre
 const drawings = [
-  { img: drawing1, title: 'Greninja' },
+  { img: drawing1, title: 'Narancia Ghirga' },
   { img: drawing2, title: 'DAN DAN DAN -  Granny' },
   { img: drawing3, title: 'Jolyne Cujoh' },
   { img: drawing4, title: 'Giorno Giovanna' },
-  { img: drawing5, title: 'Narancia Ghirga' },
+  { img: drawing5, title: 'Greninja' },
   { img: drawing6, title: 'Fille aux tresses' },
   { img: drawing7, title: 'Feuilles dorées' },
+  { img: drawing8, title: '' },
+  { img: drawing9, title: 'Izuku' },
+  { img: drawing10, title: '' },
+  { img: drawing11, title: '' },
+  { img: drawing12, title: 'Bakugo' },
+  { img: drawing13, title: '' },
+  { img: drawing14, title: '' },
+  { img: drawing15, title: 'DAN DAN DAN - Okarun' },
+  { img: drawing16, title: 'Levy' },
 ];
 
 export default function Testimonials() {

@@ -4,13 +4,16 @@ import drawing1 from '../assets/drawing1.png';
 import drawing2 from '../assets/drawing2.png';
 import drawing3 from '../assets/drawing3.png';
 import drawing4 from '../assets/drawing4.png';
-import drawing5 from '../assets/drawing5.png';
-import drawing6 from '../assets/drawing6.png';
 import drawing7 from '../assets/drawing7.png';
+import drawing8 from '../assets/drawing8.jpg';
+import drawing10 from '../assets/drawing10.jpg';
+import drawing11 from '../assets/drawing11.jpg';
+import drawing12 from '../assets/drawing12.jpg';
+import drawing13 from '../assets/drawing13.jpg';
 import './Home.scss';
 
 // Tous mes dessins
-const drawings = [drawing1, drawing2, drawing3, drawing4, drawing5, drawing6, drawing7];
+const drawings = [drawing1, drawing2, drawing3, drawing4, drawing7, drawing8, drawing10, drawing11, drawing12, drawing13];
 
 export default function Home({ onNavigate }) {
   // Index du dessin actuellement visible
