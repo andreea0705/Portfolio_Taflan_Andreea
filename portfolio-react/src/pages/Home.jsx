@@ -48,7 +48,7 @@ export default function Home({ onNavigate }) {
         <div className="home-text">
           <p className="home-tag">Bienvenue sur mon portfolio </p>
           <h1 className="home-name">TAFLAN<br /><span>ANDREEA</span></h1>
-          <p className="home-role">// Développeuse Web & Artiste Digitale</p>
+          <p className="home-role">{'// Développeuse Web & Artiste Digitale'}</p>
           <p className="home-desc">
             Passionnée par l'intersection entre <em>design et performance web</em>,
             je suis une artiste qui veut intégrer son imagination dans le monde du tech.
@@ -65,7 +65,7 @@ export default function Home({ onNavigate }) {
 
         {/* Slider de dessins à droite */}
         <div className="home-slider">
-          <div className="slider-label">// mes dessins</div>
+          <div className="slider-label">{'// mes dessins'}</div>
 
           {/* Image principale */}
           <div className="slider-frame">

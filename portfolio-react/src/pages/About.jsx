@@ -54,7 +54,7 @@ export default function About() {
         <div className="section-header reveal">
           <div className="section-num">01</div>
           <div className="section-title-wrap">
-            <div className="section-label">// LEVEL_1</div>
+            <div className="section-label">{'// LEVEL_1'}</div>
             <h2 className="section-title">Profil du <span> Joueur </span></h2>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function About() {
 
         {/* Fiche projet portfolio */}
         <div className="fiche-header reveal">
-          <div className="section-label">// FICHE_PROJET.md</div>
+          <div className="section-label">{'// FICHE_PROJET.md'}</div>
           <h3 className="fiche-title">Portfolio — <span>Fiche Projet</span></h3>
         </div>
 

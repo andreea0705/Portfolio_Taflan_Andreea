@@ -41,7 +41,7 @@ export default function Contact() {
         <div className="section-header">
           <div className="section-num">05</div>
           <div className="section-title-wrap">
-            <div className="section-label">// contact.quête</div>
+            <div className="section-label">{'// contact.quête'}</div>
             <h2 className="section-title">Me <span>Contacter</span></h2>
           </div>
         </div>
