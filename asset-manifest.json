@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio_Taflan_Andreea/static/css/main.f0c8efb4.css",
-    "main.js": "/Portfolio_Taflan_Andreea/static/js/main.e2b59a89.js",
+    "main.js": "/Portfolio_Taflan_Andreea/static/js/main.a0c4cf73.js",
     "static/media/drawing2.png": "/Portfolio_Taflan_Andreea/static/media/drawing2.9b120dd413c9e12ce115.png",
     "static/media/project-menumaker.png": "/Portfolio_Taflan_Andreea/static/media/project-menumaker.82bfeb018d1c64a51931.png",
     "static/media/drawing4.png": "/Portfolio_Taflan_Andreea/static/media/drawing4.ca18a97f5239ea342319.png",
@@ -25,10 +25,10 @@
     "static/media/project-ohmyfood1.png": "/Portfolio_Taflan_Andreea/static/media/project-ohmyfood1.5ff47ec6566e394a4adc.png",
     "index.html": "/Portfolio_Taflan_Andreea/index.html",
     "main.f0c8efb4.css.map": "/Portfolio_Taflan_Andreea/static/css/main.f0c8efb4.css.map",
-    "main.e2b59a89.js.map": "/Portfolio_Taflan_Andreea/static/js/main.e2b59a89.js.map"
+    "main.a0c4cf73.js.map": "/Portfolio_Taflan_Andreea/static/js/main.a0c4cf73.js.map"
   },
   "entrypoints": [
     "static/css/main.f0c8efb4.css",
-    "static/js/main.e2b59a89.js"
+    "static/js/main.a0c4cf73.js"
   ]
 }
