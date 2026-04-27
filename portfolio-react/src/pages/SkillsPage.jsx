@@ -26,7 +26,7 @@ export default function SkillsPage() {
         <div className="section-header reveal">
           <div className="section-num">03</div>
           <div className="section-title-wrap">
-            <div className="section-label">// skills_dashboard</div>
+            <div className="section-label">{'// skills_dashboard'}</div>
             <h2 className="section-title">Mes <span>Compétences</span></h2>
           </div>
         </div>
