@@ -63,58 +63,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Formulaire à droite */}
-          <form className="contact-form" onSubmit={submit}>
-
-            {/* Nom */}
-            <div className="form-group">
-              <label>Nom</label>
-              <input
-                type="text"
-                placeholder="Ton nom.."
-                value={form.name}
-                onChange={e => update('name', e.target.value)}
-                className={errors.name ? 'error' : ''}
-              />
-              {errors.name && <span className="error-msg">{errors.name}</span>}
-            </div>
-
-            {/* Email */}
-            <div className="form-group">
-              <label>Email</label>
-              <input
-                type="email"
-                placeholder="ton@email.com"
-                value={form.email}
-                onChange={e => update('email', e.target.value)}
-                className={errors.email ? 'error' : ''}
-              />
-              {errors.email && <span className="error-msg">{errors.email}</span>}
-            </div>
-
-            {/* Message */}
-            <div className="form-group">
-              <label>Message</label>
-              <textarea
-                placeholder="Ton message..."
-                value={form.message}
-                onChange={e => update('message', e.target.value)}
-                className={errors.message ? 'error' : ''}
-              />
-              {errors.message && <span className="error-msg">{errors.message}</span>}
-            </div>
-
-            {/* Bouton envoyer */}
-            <button type="submit" className="btn-primary">
-              Envoyer →
-            </button>
-
-            {/* Message de confirmation */}
-            {sent && (
-              <p className="success-msg">✓  [ SUCCÈS ] — Mission accomplie ! Je te réponds vite 💗</p>
-            )}
-
-          </form>
+       
         </div>
 
       </div>
