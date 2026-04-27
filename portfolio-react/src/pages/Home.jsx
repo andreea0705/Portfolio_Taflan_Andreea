@@ -65,7 +65,7 @@ export default function Home({ onNavigate }) {
 
         {/* Slider de dessins à droite */}
         <div className="home-slider">
-          <div className="slider-label">{'// mes dessins'}</div>
+          <div className="slider-label">► mes dessins</div>
 
           {/* Image principale */}
           <div className="slider-frame">
