@@ -104,7 +104,7 @@ export default function About() {
 
         {/* Fiche projet portfolio */}
         <div className="fiche-header reveal">
-          <div className="section-label">► FICHE_PROJET.md</div>
+          <div className="section-label"> FICHE_PROJET.md</div>
           <h3 className="fiche-title">Portfolio — <span>Fiche Projet</span></h3>
         </div>
 

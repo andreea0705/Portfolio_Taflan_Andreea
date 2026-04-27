@@ -63,7 +63,7 @@ export default function Projects() {
         <div className="section-header">
           <div className="section-num">02</div>
           <div className="section-title-wrap">
-            <div className="section-label">► QUÊTES_ACCOMPLIES.log</div>
+            <div className="section-label"> QUÊTES_ACCOMPLIES.log</div>
             <h2 className="section-title">Mes <span>Projets</span></h2>
           </div>
         </div>
